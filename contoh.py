@@ -1,7 +1,7 @@
-from KoloniSemut import Semut
+from semut import Semut
 
-ncmax = 1000000 #jumlah iterasi
-m = 100 #banyak semut
+ncmax = 1000000
+m = 100
 rho = 0.5
 tho = 0.01
 alpha = 1
@@ -14,11 +14,14 @@ koordinatKota = {"A" : [10, 0],
                  "D" : [5, 5],
                  "E" : [2, 3]}
 
-#data = Semut.data_dari_excel("Data Jarak.xlsx")
 
-data = Semut.data_koordinat(koordinatKota)
+Semutku = Semut()
 
-ant_colony = Semut.start_ant_colony(ncmax, m, data, alpha, beta, rho, tho, Q, cetak = True)
+#data = Semutku.data_koordinat(koordinatKota)
+
+data = Semutku.data_dari_excel("Data Jarak.xlsx")
+
+ant_colony = Semutku.antcolony(ncmax, m, data)
 
 print("\n-------------------- JALUR TERBAIK --------------------")
 print(ant_colony["jalur"])
