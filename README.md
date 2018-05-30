@@ -85,3 +85,25 @@ Memiliki nilai kembalian
 <li>Jarak Terpendek -> ant_colony["jarak"]</li>
 <li>Jumlah Iterasi yang dilakukan -> ant_colony["iterasi"]</li>
 </ul>
+
+## Penerapan
+### Contoh kode simpel untuk data dari koordinat
+```
+from semut import Semut
+koordinatKota = {"A" : [10, 0],
+                 "B" : [9, 9],
+                 "C" : [0, 0],
+                 "D" : [5, 5],
+                 "E" : [2, 3]}
+Semutku = Semut()
+data = Semutku.data_koordinat(koordinatKota)
+ant_colony = Semutku.antcolony(100, 10, data)
+```
+
+### Contoh kode simpel data dari file
+```
+from semut import Semut
+Semutku = Semut()
+data = Semutku.data_dari_excel("Data Jarak.xlsx")
+ant_colony = Semutku.antcolony(100, 10, data)
+```
