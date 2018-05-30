@@ -107,3 +107,25 @@ Semutku = Semut()
 data = Semutku.data_dari_excel("Data Jarak.xlsx")
 ant_colony = Semutku.antcolony(100, 10, data)
 ```
+
+## Hasil Running
+
+Hasil Running apabila dicetak dengan
+```
+print("\n-------------------- JALUR TERBAIK --------------------")
+print(ant_colony["jalur"])
+print("-------------------- JARAK --------------------")
+print(ant_colony["jarak"])
+print("-------------------- JUMLAH ITERASI --------------------")
+print(ant_colony["iterasi"])
+```
+
+maka dihasilkan
+````
+-------------------- JALUR TERBAIK --------------------
+Kamal-Socah-Bangkalan-Burneh-Tragah-Kwanyar-Labang-Tanah Merah-Galis-Blega-Modung-Konang-Kokop-Tanjung Bumi-Sepuluh-Klampis-Arosbaya-Geger
+-------------------- JARAK --------------------
+194.0
+-------------------- JUMLAH ITERASI --------------------
+46
+````
