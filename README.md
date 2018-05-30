@@ -1,4 +1,4 @@
-# Ant-Colony
+# AntColony
 Implementasi Ant Colony pada pencarian jalur terdekat di semua kecamatan di Bangkalan. Menggunakan bahasa Python 3
 
 ## Penggunaan
