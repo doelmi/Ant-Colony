@@ -3,6 +3,12 @@ Implementasi Ant Colony pada pencarian jalur terdekat di semua kecamatan di Bang
 
 ## Penggunaan
 
+### Instal dependency
+Instal terlebih dahulu library 'texttable'
+```
+pip install texttable
+```
+
 ### Penempatan
 Tempatkan file semut.py di dalam folder project kamu.
 
