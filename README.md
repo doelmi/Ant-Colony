@@ -9,6 +9,11 @@ Instal terlebih dahulu library 'texttable'
 pip install texttable
 ```
 
+Lalu library 'xlrd'
+```
+pip install xlrd
+```
+
 ### Penempatan
 Tempatkan file semut.py di dalam folder project kamu.
 
