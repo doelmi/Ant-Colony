@@ -9,10 +9,10 @@ class Semut:
         t.add_rows(data_array)
         print(t.draw())
     
-    def data_dari_excel(self, nama_file):
+    def data_dari_excel(self, nama_file, sheet_index = 0):
         tabel=[]
         file_excel = xlrd.open_workbook(nama_file)
-        sheet = file_excel.sheet_by_index(3)
+        sheet = file_excel.sheet_by_index(sheet_index)
         baris = sheet.nrows
         kolom = sheet.ncols
     
