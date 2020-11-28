@@ -53,6 +53,13 @@ nama_file = "Data Jarak.xlsx"
 data = Semutku.data_dari_excel(nama_file)
 ```
 
+Default index yang digunakan adalah index ke 0, namun bisa juga mengeset index sheet spesifik
+```
+nama_file = "Data Jarak.xlsx"
+sheet_index = 2
+data = Semutku.data_dari_excel(nama_file, sheet_index)
+```
+
 #### Data dari koordinat
 Data dari koordinat harus sesuai dengan format berikut
 ```
